@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnify Activation Email</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #fafafa;
+        color: #222222;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+
+      .e-wrapper {
+        min-width: 600px;
+        margin: 0 auto;
+      }
+
+      .e-header {
+        background-color: #0070f3;
+        padding: 24px;
+        color: #ffffff;
+      }
+
+      .e-body {
+        padding: 24px;
+        background-color: #ffffff;
+      }
+
+      .e-footer {
+        background-color: #f6f6f6;
+        padding: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="e-wrapper">
+      <div class="e-header">
+        <h1>Welcome to Learnify</h1>
+      </div>
+      <div class="e-body">
+        <p>Hello <%= user.name %>,</p>
+        <p>
+          Thank you for registering with Learnify. To activate your account,
+          please use the following activation code:
+        </p>
+        <h2><%= activationCode %></h2>
+        <p>
+          Please activate this code on the activation page within 5 minutes.
+        </p>
+        <p>
+          If you did not register for an account on Learnify, please ignore this
+          email.
+        </p>
+      </div>
+      <div class="e-footer">
+        If you have any questions, please don't hesitate to contact us at
+        <a target="_blank" href="mailto:vanshjain33@gmail.com"
+          >vanshjain33@gmail.com</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
